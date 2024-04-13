@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="to-do-container rounded border p-4 my-auto bg-light">
+        <div class="d-flex gap-3 align-items-center">
+            <lord-icon
+                src="https://cdn.lordicon.com/wuvorxbv.json"
+                trigger="hover"
+                style="width:50px;height:50px">
+            </lord-icon>
+            <h4 class="m-0">To Do App</h4>
+        </div>
+
+    <input type="text" class="task-input form-control">
+    <span class="d-flex justify-content-end w-100">
+        <button class="btn btn-md btn-dark" onclick="submitBtn()">Add</button>
+    </span>
+
+    <div class="d-flex justify-content-center align-items-center border-bottom pb-4 w-100">
+        <lord-icon
+        src="https://cdn.lordicon.com/wzwygmng.json"
+        trigger="hover"
+        style="width:50px;height:50px">
+    </lord-icon>
+    <h4 class="m-0">List of tasks</h4>
+</div>
+    <ul class="task-list w-100"></ul>
+    </div>
+
+    <script src="./todo.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</body>
+</html>
